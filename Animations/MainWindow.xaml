@@ -1,0 +1,33 @@
+﻿<Window x:Class="Animations.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Animations"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas>
+        <Polyline Points="15 40 55 70 25 8 6 30" Stroke="Red" Width="87" Canvas.Left="417" Canvas.Top="-158" Height="68">
+            <Polyline.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="2.446" ScaleX="2.128"/>
+                    <SkewTransform AngleX="40"/>
+                    <RotateTransform Angle="20"/>
+                    <TranslateTransform X="181.83821405597215" Y="118.23523748259237"/>
+                </TransformGroup>
+            </Polyline.RenderTransform>
+        </Polyline>
+        <Rectangle Width="427" Height="179" Stroke="Black" Fill="DarkGreen" Canvas.Left="10" Canvas.Top="230"/>
+        <Polygon Points="30 40 55 90 60 8 8 30" Fill="DarkGray" Canvas.Left="86" Canvas.Top="49"/>
+        <Ellipse Name="MotionEllips" Width="100" Height="100" Fill="Purple" Canvas.Left="470" Canvas.Top="90" RenderTransformOrigin="0.498,0.525">
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="6454.375"/>
+                    <TranslateTransform X="-2.973" Y="35.755"/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+    </Canvas>
+</Window>
